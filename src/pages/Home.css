@@ -1,0 +1,48 @@
+/* Home Page Styles */
+.home-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Search Overlay - Positioned over the hero section */
+.search-overlay {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .search-overlay {
+    bottom: 8%;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-overlay {
+    bottom: 8%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-overlay {
+    bottom: 8%;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-overlay {
+    bottom: 8%;
+    padding: 0 0.5rem;
+  }
+}

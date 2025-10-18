@@ -1,0 +1,269 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icon:hover {
+  opacity: 0.7;
+  transform: scale(1.1) rotate(90deg);
+}
+
+.logo {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.5px;
+  font-family: 'Georgia', serif;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover {
+  letter-spacing: 2px;
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  /* allow logo to wrap if needed on very small screens */
+  .logo {
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+/* Right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.phone-number {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 300;
+  position: relative;
+}
+
+.phone-number::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-number:hover::after {
+  width: 100%;
+}
+
+.phone-number:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.app-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.app-button:hover::before {
+  left: 0;
+}
+
+.app-button:hover {
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+  
+  .navbar-left {
+    gap: 1rem;
+  }
+  
+  .navbar-right {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .phone-number,
+  .app-button {
+    display: none;
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+  
+  .navbar-left {
+    gap: 0.75rem;
+  }
+  
+  .menu-icon,
+  .icon-button {
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 0.75rem;
+  }
+  
+  .navbar {
+    padding: 0.75rem 0;
+  }
+  
+  .navbar-left {
+    gap: 0.5rem;
+  }
+  
+  .navbar-right {
+    gap: 0.75rem;
+  }
+  
+  .menu-icon,
+  .icon-button {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-container {
+    padding: 0 0.5rem;
+  }
+  
+  .logo {
+    font-size: 0.9rem;
+  }
+}
