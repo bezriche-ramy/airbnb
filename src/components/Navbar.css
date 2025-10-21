@@ -196,6 +196,18 @@
   transform: scale(1.15) rotate(5deg);
 }
 
+/* Prevent the wishlist heart from shifting/rotating on hover */
+.icon-button.wishlist:hover {
+  transform: none;
+  opacity: 0.9; /* keep a little hover feedback */
+}
+
+/* Prevent right-side icon buttons (wishlist, profile, etc.) from shifting/rotating on hover */
+.navbar-right .icon-button:hover {
+  transform: none;
+  opacity: 0.92; /* subtle hover feedback only */
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .navbar-container {

@@ -1,9 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import PhotoGallerySection from '../components/PhotoGallerySection';
-import SkiFever from '../components/SkiFever';
-import IconicCollectionCarousel from '../components/IconicCollectionCarousel';
+// PhotoGallerySection, SkiFever, and IconicCollectionCarousel removed per request
 import './Home.css';
 
 /**
@@ -22,15 +20,7 @@ const Home = () => {
 
   
 
-      {/* Photo Gallery Section - Collections */}
-      <PhotoGallerySection />
-
-    
-      {/* Ski Fever Promo Block */}
-      <SkiFever />
-
-        {/* Iconic Collection Carousel */}
-      <IconicCollectionCarousel />
+      {/* Removed Photo Gallery, Ski Fever, and Iconic Collection sections */}
 
 
     </div>
