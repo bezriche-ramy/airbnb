@@ -39,9 +39,13 @@ const Navbar = () => {
       }
     };
 
+    let last = null;
     const poll = () => {
       const anyScrolled = candidates.some((c) => getTop(c) > 0);
-      setScrolled(anyScrolled);
+      if (anyScrolled !== last) {
+        last = anyScrolled;
+        setScrolled(anyScrolled);
+      }
       rafId = requestAnimationFrame(poll);
     };
 
@@ -56,6 +60,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : 'transparent'} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
+        <div className="navbar-inner">
         {/* Left section - Menu icon and Logo */}
         <div className="navbar-left">
           <button className="menu-icon" aria-label="Menu" onClick={toggleMenu} aria-expanded={menuOpen} aria-controls="site-drawer">
@@ -80,6 +85,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+        </div>
       {/* Drawer + Backdrop */}
       <div className={`nav-backdrop ${menuOpen ? 'open' : ''}`} onClick={closeMenu} aria-hidden={!menuOpen}></div>
 
