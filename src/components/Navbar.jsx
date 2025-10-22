@@ -17,15 +17,13 @@ const Navbar = () => {
             <FaBars />
           </button>
           <div className="logo">
-            le collectionist
+            <img src="/logo.jpg" alt="conciergerie logo" className="logo-img" />
+            <span className="logo-text">conciergerie</span>
           </div>
         </div>
 
         {/* Right section - Phone, App button, Wishlist, Profile */}
         <div className="navbar-right">
-          <a href="tel:+33173030202" className="phone-number">
-            +33 1 73 03 02 02
-          </a>
           <button className="app-button">
             Obtenir l'app
           </button>

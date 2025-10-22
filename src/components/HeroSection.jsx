@@ -1,5 +1,4 @@
 import React from 'react';
-import SuggestionBar from './SuggestionBar';
 import './HeroSection.css';
 
 /**
@@ -31,20 +30,17 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="hero-content">
         <h1 className="hero-title">
-          Vos vacances méritent d'être inoubliables
+          Votre bien. Notre expertise. Votre tranquillité.
         </h1>
         <p className="hero-subtitle">
-          Les plus belles maisons à louer, des services exceptionnels et des expériences mémorables
+          B&C pour Bienveillance & Confiance
         </p>
         <button className="estimation-button">
-          Estimation
+          Demander une estimation gratuite
         </button>
       </div>
 
-      {/* Suggestion Bar - Positioned at bottom of hero */}
-      <div className="hero-suggestion-overlay">
-        <SuggestionBar />
-      </div>
+      {/* suggestion bar removed */}
     </section>
   );
 };

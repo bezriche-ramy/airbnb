@@ -1,7 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-// PhotoGallerySection, SkiFever, and IconicCollectionCarousel removed per request
+import WelcomeSection from '../components/WelcomeSection';
+import WhyChooseUs from '../components/WhyChooseUs';
+import NosEngagements from '../components/NosEngagements';
+
+// PhotoGallerySection and IconicCollectionCarousel removed per request
 import './Home.css';
 
 /**
@@ -15,13 +19,17 @@ const Home = () => {
       {/* Navigation Bar */}
       <Navbar />
 
-      {/* Hero Section with Video Background and Suggestion Bar */}
+      {/* Hero Section with Video Background */}
       <HeroSection />
 
-  
+      {/* Welcome Section - B&C Conciergerie Introduction */}
+      <WelcomeSection />
 
-      {/* Removed Photo Gallery, Ski Fever, and Iconic Collection sections */}
+      {/* Why Choose Us Section - Key Benefits */}
+      <WhyChooseUs />
 
+  {/* Nos engagements - company commitments */}
+  <NosEngagements />
 
     </div>
   );

@@ -19,6 +19,14 @@
   
   /* Smooth scrolling */
   scroll-behavior: smooth;
+
+  /* Brand color palette */
+  --olive-700: #708238; /* Vert olive - environnement, nature, prestige, confiance */
+  --beige-100: #F5EEDF; /* Beige clair - sérénité, lumière du Sud */
+  --offwhite-50: #FAF9F6; /* Blanc cassé - pureté, équilibre */
+  --gold-100: #C7A76C; /* Doré léger - raffinement (optionnel) */
+  --text-dark: #222; /* primary dark text */
+  --muted-white: rgba(250,249,246,0.95);
 }
 
 html,
@@ -32,8 +40,61 @@ body {
 }
 
 body {
-  background-color: #000;
-  color: #333;
+  /* Use a subtle dark backdrop to help the hero video contrast with light text */
+  background-color: #071014; /* deep midnight tonic */
+  color: var(--text-dark);
+}
+
+/* Global utility colors */
+.bg-beige {
+  background-color: var(--beige-100) !important;
+}
+
+.text-olive {
+  color: var(--olive-700) !important;
+}
+
+.text-offwhite {
+  color: var(--offwhite-50) !important;
+}
+
+/* Hero-specific theming */
+.hero-section {
+  /* keep video visible but apply a warm overlay using beige with low opacity */
+  background: linear-gradient(
+    to bottom,
+    rgba(112,130,56,0.06),
+    rgba(199,167,108,0.04)
+  );
+}
+
+.hero-content {
+  color: var(--offwhite-50);
+}
+
+.hero-title {
+  color: var(--offwhite-50);
+}
+
+.hero-subtitle {
+  color: rgba(250,249,246,0.9);
+}
+
+.estimation-button {
+  background-color: transparent;
+  color: var(--offwhite-50);
+  border-color: var(--olive-700);
+}
+
+.estimation-button:hover {
+  background-color: rgba(112,130,56,0.12);
+  border-color: var(--gold-100);
+  color: var(--offwhite-50);
+}
+
+/* small gold accent utility */
+.accent-gold {
+  color: var(--gold-100);
 }
 
 a {
