@@ -73,12 +73,15 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 /* subtle transition band between welcome and why sections */
 .section-transition {
   width: 100%;
-  height: 88px;
+  height: 120px;
   /* smooth multi-stop blend using the same site color variables */
   background: linear-gradient(180deg,
     var(--offwhite-50, #FAF9F6) 0%,
-    rgba(250,249,246,0.98) 28%,
-    rgba(247,243,236,0.96) 56%,
+    rgba(250,249,246,0.99) 15%,
+    rgba(249,247,241,0.98) 30%,
+    rgba(248,245,236,0.96) 45%,
+    rgba(247,243,231,0.94) 60%,
+    rgba(246,241,226,0.92) 75%,
     var(--beige-100, #F5EEDF) 100%
   );
   pointer-events: none;
@@ -87,6 +90,29 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 @media (max-width: 480px) {
-  .section-transition { height: 56px; }
+  .section-transition { height: 80px; }
+}
+
+/* subtle transition band between why-choose-us and engagements sections */
+.section-transition-olive {
+  width: 100%;
+  height: 120px;
+  /* smooth multi-stop blend from beige to olive using the same site color variables */
+  background: linear-gradient(180deg,
+    var(--beige-100, #F5EEDF) 0%,
+    rgba(245,238,223,0.99) 15%,
+    rgba(244,236,218,0.98) 30%,
+    rgba(243,234,213,0.96) 45%,
+    rgba(242,232,208,0.94) 60%,
+    rgba(241,230,203,0.92) 75%,
+    var(--olive-700, #708238) 100%
+  );
+  pointer-events: none;
+  background-repeat: no-repeat;
+  will-change: background-position;
+}
+
+@media (max-width: 480px) {
+  .section-transition-olive { height: 80px; }
 }
 

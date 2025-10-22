@@ -33,8 +33,11 @@ const Home = () => {
   {/* Why Choose Us Section - Key Benefits */}
   <WhyChooseUs />
 
-        {/* Nos engagements - company commitments */}
-        <NosEngagements />
+  {/* subtle color transition between sections */}
+  <div className="section-transition-olive" aria-hidden="true" />
+
+  {/* Nos Engagements Section */}
+  <NosEngagements />
       </main>
     </div>
   );
