@@ -19,18 +19,20 @@ const Home = () => {
       {/* Navigation Bar */}
       <Navbar />
 
-      {/* Hero Section with Video Background */}
-      <HeroSection />
+      {/* Main page content (will be blurred when the nav drawer opens) */}
+      <main className="site-main">
+        {/* Hero Section with Video Background */}
+        <HeroSection />
 
-      {/* Welcome Section - B&C Conciergerie Introduction */}
-      <WelcomeSection />
+        {/* Welcome Section - B&C Conciergerie Introduction */}
+        <WelcomeSection />
 
-      {/* Why Choose Us Section - Key Benefits */}
-      <WhyChooseUs />
+        {/* Why Choose Us Section - Key Benefits */}
+        <WhyChooseUs />
 
-  {/* Nos engagements - company commitments */}
-  <NosEngagements />
-
+        {/* Nos engagements - company commitments */}
+        <NosEngagements />
+      </main>
     </div>
   );
 };

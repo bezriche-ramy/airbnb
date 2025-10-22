@@ -3,7 +3,8 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  /* Allow vertical scrolling - previously set to hidden which prevented scroll events */
+  overflow-y: auto;
 }
 
 /* Search Overlay - Positioned over the hero section */
