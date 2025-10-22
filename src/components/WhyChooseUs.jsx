@@ -13,9 +13,20 @@ const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
       <div ref={ref} className={`why-container ${visible ? 'is-visible' : ''}`}>
-        <h2 className="why-title">Pourquoi nous choisir</h2>
-        
-        <div className="benefits-grid">
+        <div className="why-columns">
+          <div className="why-image" aria-hidden>
+            <img src="/olive.jpg" alt="Arbre d'olive sur la Côte d'Azur" />
+          </div>
+
+          <div className="why-content">
+            <h2 className="why-title">Pourquoi nous choisir</h2>
+
+            {/* mobile-only image placed after the title */}
+            <div className="why-image-mobile" aria-hidden>
+              <img src="/olive.jpg" alt="Arbre d'olive sur la Côte d'Azur" />
+            </div>
+
+            <div className="benefits-grid">
           <div className="benefit-card">
             <span className="benefit-badge" aria-hidden>
               {/* Shield icon for Sérénité totale */}
@@ -66,6 +77,8 @@ const WhyChooseUs = () => {
             <p className="benefit-description">
               Une équipe basée sur la Côte d'Azur, disponible et réactive.
             </p>
+          </div>
+            </div>
           </div>
         </div>
       </div>

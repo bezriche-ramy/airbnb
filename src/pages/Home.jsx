@@ -24,11 +24,14 @@ const Home = () => {
         {/* Hero Section with Video Background */}
         <HeroSection />
 
-        {/* Welcome Section - B&C Conciergerie Introduction */}
-        <WelcomeSection />
+  {/* Welcome Section - B&C Conciergerie Introduction */}
+  <WelcomeSection />
 
-        {/* Why Choose Us Section - Key Benefits */}
-        <WhyChooseUs />
+  {/* subtle color transition between sections */}
+  <div className="section-transition" aria-hidden="true" />
+
+  {/* Why Choose Us Section - Key Benefits */}
+  <WhyChooseUs />
 
         {/* Nos engagements - company commitments */}
         <NosEngagements />

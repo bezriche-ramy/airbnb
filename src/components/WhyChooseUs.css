@@ -15,6 +15,37 @@
   margin: 0 auto;
 }
 
+/* Two-column layout: left image, right content (title + benefits) */
+.why-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.why-image {
+  width: 100%;
+  height: 90%;
+  display: block;
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(7,16,20,0.12);
+}
+.why-image img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile inline image (hidden by default) */
+.why-image-mobile { display: none; }
+
+.why-content {
+  width: 100%;
+}
+
 .why-title {
   font-size: clamp(2rem, 3.4vw, 3rem);
   font-weight: 700;
@@ -141,12 +172,22 @@
   .benefit-card { padding: 16px; aspect-ratio: auto; max-width: 100%; max-height: none; }
   .benefit-badge { position: relative; top: 0; left: 0; transform: none; margin-bottom: 10px; }
   .benefit-card::after { display: none; }
+
+  /* Stack image above content on small screens */
+  .why-columns { grid-template-columns: 1fr; gap: 24px; }
+  .why-image { min-height: 220px; border-radius: 10px; }
+
 }
 
 @media (max-width: 480px) {
   .why-choose-us { padding: 50px 0; }
   .benefit-card { padding: 14px; }
   .benefit-title { margin-bottom: 8px; }
+
+  /* On narrow phones: hide the left column image and show the inline image after the title */
+  .why-image { display: none; }
+  .why-image-mobile { display: block; margin: 16px 0 35px 0; border-radius: 50px; overflow: hidden; }
+  .why-image-mobile img { width: 100%; height: 450px; object-fit: cover; object-position: top center; display: block; }
 }
 
 /* Duplicate responsive rules removed — keep the earlier media queries to avoid brace mismatch */

@@ -35,20 +35,25 @@ const WelcomeSection = () => {
         {/* Right side - Photo grid */}
         <div className="welcome-photos">
           <div className="photo-grid">
-            <img 
-              src="https://th.bing.com/th/id/OIP.DEK0fRndpTScfJR7CAI8BAHaD2?w=320&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" 
-              alt="Luxury property view 1"
+            <img
+              src="/cannes.jpg"
+              alt="Cannes luxury property"
               className="grid-photo photo-1"
             />
-            <img 
-              src="https://th.bing.com/th/id/OIP.MsH-aCY_jy8xSwEL0efzKwHaEK?w=329&h=185&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" 
-              alt="Luxury property view 2"
+            <img
+              src="/cote azur.jpg"
+              alt="Côte d'Azur villa"
               className="grid-photo photo-2"
             />
-            <img 
-              src="https://th.bing.com/th/id/OIP.vtk3S8Dmmu91gU8Uju8-jQHaE8?w=277&h=185&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" 
-              alt="Luxury property view 3"
+            <img
+              src="/monaco.jpg"
+              alt="Monaco waterfront"
               className="grid-photo photo-3"
+            />
+            <img
+              src="/ville_franche.jpg"
+              alt="Villefranche-sur-Mer residence"
+              className="grid-photo photo-4"
             />
           </div>
         </div>
