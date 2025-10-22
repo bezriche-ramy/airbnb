@@ -7,6 +7,28 @@
   overflow-y: auto;
 }
 
+/* Hide native scrollbars but keep scrolling functional */
+.home-page {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.home-page::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Fallback: also hide on html/body if present */
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
 /* Search Overlay - Positioned over the hero section */
 .search-overlay {
   position: absolute;
