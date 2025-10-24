@@ -2,13 +2,15 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 300px;
-  min-height: 500px;
+  /* make the hero much taller on large screens while remaining responsive
+     Use a viewport height basis with a high minimum so the video appears long */
+  height: 100vh;
+  min-height: 100px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 80vh;
+  max-height: none;
 }
 
 /* Background Video - Fullscreen */
@@ -146,6 +148,8 @@
   }
   
   .hero-section {
+    /* slightly reduce on medium screens */
+    height: 75vh;
     min-height: 450px;
   }
 }
