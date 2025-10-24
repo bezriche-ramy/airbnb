@@ -36,24 +36,28 @@ const WelcomeSection = () => {
         <div className="welcome-photos">
           <div className="photo-grid">
             <img
-              src="/public/why1.jpg"
+              src="/why1.jpg"
               alt="Why image 1"
               className="grid-photo photo-1"
+              loading="lazy"
             />
             <img
-              src="/public/why2.jpg"
+              src="/why2.jpg"
               alt="Why image 2"
               className="grid-photo photo-2"
+              loading="lazy"
             />
             <img
-              src="/public/why3.jpg"
+              src="/why3.jpg"
               alt="Why image 3"
               className="grid-photo photo-3"
+              loading="lazy"
             />
             <img
-              src="/public/why4.jpg"
+              src="/why4.jpg"
               alt="Why image 4"
               className="grid-photo photo-4"
+              loading="lazy"
             />
           </div>
         </div>
