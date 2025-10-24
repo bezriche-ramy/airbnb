@@ -132,25 +132,17 @@
   pointer-events: none;
 }
 
-/* Animations */
-@keyframes cardPop {
-  0% { transform: translateY(18px) scale(0.98); opacity: 0; }
-  60% { transform: translateY(-6px) scale(1.02); opacity: 1; }
-  100% { transform: translateY(0) scale(1); opacity: 1; }
-}
+/* Performance hints removed - using simple Framer Motion animations only */
 
 .why-container { opacity: 1; transform: none; }
-.why-container .why-title,
 .why-container .benefit-card { opacity: 0; transform: translateY(14px) scale(0.99); will-change: transform, opacity; }
 .why-container.is-visible { animation: fadeInUpHero 0.7s cubic-bezier(0.22, 0.9, 0.2, 1) 0s both; opacity: 1; transform: translateY(0); }
-.why-container.is-visible .why-title { animation: titleReveal 560ms cubic-bezier(0.2,0,0,1) 0s both; opacity: 1; transform: translateY(0); }
 /* All cards animate from t=0 with the same timing for immediate effect */
 .why-container.is-visible .benefit-card { animation: cardPop 520ms cubic-bezier(0.22, 1, 0.36, 1) 0s both; }
 
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .why-container.is-visible .benefit-card,
-  .why-container.is-visible .why-title,
   .why-container { animation: none !important; transition: none !important; }
   .benefit-card { transform: none !important; opacity: 1 !important; }
 }

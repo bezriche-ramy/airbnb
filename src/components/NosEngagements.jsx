@@ -62,18 +62,6 @@ const NosEngagements = () => {
         </div>
 
         <div className="nos-engagements-image-wrapper">
-          <div className="award-badge">
-            <div className="award-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
-              </svg>
-            </div>
-            <div className="award-text">
-              <div className="award-title">Award Winner</div>
-              <div className="award-subtitle">Best Travel Agency 2024</div>
-            </div>
-          </div>
-
           <img src="/nos enga.jpg" alt="B&C Conciergerie Côte d'Azur" className="nos-engagements-image" />
         </div>
       </div>

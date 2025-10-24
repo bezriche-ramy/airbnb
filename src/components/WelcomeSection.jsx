@@ -36,23 +36,23 @@ const WelcomeSection = () => {
         <div className="welcome-photos">
           <div className="photo-grid">
             <img
-              src="/cannes.jpg"
-              alt="Cannes luxury property"
+              src="/public/why1.jpg"
+              alt="Why image 1"
               className="grid-photo photo-1"
             />
             <img
-              src="/cote azur.jpg"
-              alt="Côte d'Azur villa"
+              src="/public/why2.jpg"
+              alt="Why image 2"
               className="grid-photo photo-2"
             />
             <img
-              src="/monaco.jpg"
-              alt="Monaco waterfront"
+              src="/public/why3.jpg"
+              alt="Why image 3"
               className="grid-photo photo-3"
             />
             <img
-              src="/ville_franche.jpg"
-              alt="Villefranche-sur-Mer residence"
+              src="/public/why4.jpg"
+              alt="Why image 4"
               className="grid-photo photo-4"
             />
           </div>

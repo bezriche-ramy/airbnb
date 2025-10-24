@@ -4,8 +4,7 @@ import HeroSection from '../components/HeroSection';
 import WelcomeSection from '../components/WelcomeSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import NosEngagements from '../components/NosEngagements';
-
-// PhotoGallerySection and IconicCollectionCarousel removed per request
+import IconicCollectionCarousel from '../components/IconicCollectionCarousel';
 import './Home.css';
 
 /**
@@ -38,6 +37,9 @@ const Home = () => {
 
   {/* Nos Engagements Section */}
   <NosEngagements />
+
+  {/* Iconic Collection Carousel - Featured Destinations */}
+  <IconicCollectionCarousel />
       </main>
     </div>
   );
