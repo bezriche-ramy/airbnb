@@ -6,6 +6,9 @@
 .welcome-section {
   width: 100%;
   min-height: 100vh;
+  /* subtle vertical gradient from off-white to light beige (Figma spec) */
+  background: linear-gradient(to bottom, #FAF9F6 0%, #F5EEDF 100%);
+  /* fallback color for very old browsers */
   background-color: var(--offwhite-50, #FAF9F6);
   padding: 100px 0;
   display: flex;
