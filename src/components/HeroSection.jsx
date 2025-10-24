@@ -30,16 +30,16 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="hero-content">
         <h1 className="hero-title">
-          Votre bien.
+          Conciergerie de Luxe Côte d'Azur
           <br />
-          Notre expertise.
+          Votre bien. Notre expertise.
           <br />
           Votre tranquillité.
         </h1>
         <p className="hero-subtitle">
-         B&C conciergerie pour bienveillance et confiance
+         B&C Conciergerie pour bienveillance et confiance - Gestion locative premium à Nice, Monaco et Cannes
         </p>
-        <button className="estimation-button">
+        <button className="estimation-button" aria-label="Demander une estimation gratuite pour votre bien sur la Côte d'Azur">
           Demander une estimation gratuite
         </button>
       </div>

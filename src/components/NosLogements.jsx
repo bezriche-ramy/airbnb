@@ -94,9 +94,9 @@ const NosLogements = () => {
         {/* Section Header */}
         <div className="nos-logements-header">
           <span className="section-badge">NOS PROPRIÉTÉS</span>
-          <h2 className="section-title">Nos Logements</h2>
+          <h2 className="section-title">Nos Logements de Luxe Côte d'Azur</h2>
           <p className="section-intro">
-            Du studio intimiste à la villa d'exception, nous gérons une sélection rigoureuse de biens haut de gamme sur la Côte d'Azur et à Monaco. Chaque propriété bénéficie de notre expertise pour une valorisation optimale et des revenus maximisés.
+            Du studio intimiste à la villa d'exception, nous gérons une sélection rigoureuse de propriétés de luxe et biens haut de gamme sur la Côte d'Azur, à Nice, Monaco et Cannes. Chaque bien immobilier bénéficie de notre expertise en gestion locative pour une valorisation optimale et des revenus locatifs maximisés via Airbnb et location courte durée.
           </p>
         </div>
 
@@ -185,13 +185,13 @@ const PropertyCard = ({ property, index }) => {
         <div className="photo-wrapper">
           <img 
             src={property.photo1} 
-            alt={`${property.title} - vue 1`}
+            alt={`${property.title} location luxe Côte d'Azur - Gestion locative premium`}
             className={`property-photo ${activePhoto === 1 ? 'active' : ''}`}
             loading="lazy"
           />
           <img 
             src={property.photo2} 
-            alt={`${property.title} - vue 2`}
+            alt={`${property.title} location Airbnb Nice Monaco Cannes`}
             className={`property-photo ${activePhoto === 2 ? 'active' : ''}`}
             loading="lazy"
           />

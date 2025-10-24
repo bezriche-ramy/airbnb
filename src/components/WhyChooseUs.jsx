@@ -43,15 +43,15 @@ const WhyChooseUs = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={imageVariant}
           >
-            <img src="/olive.jpg" alt="Arbre d'olive sur la Côte d'Azur" />
+            <img src="/olive.jpg" alt="Conciergerie de luxe Côte d'Azur - Gestion locative premium Nice Monaco" loading="lazy" />
           </motion.div>
 
           <div className="why-content">
-            <h2 className="why-title">Pourquoi nous choisir</h2>
+            <h2 className="why-title">Pourquoi Choisir B&C Conciergerie Côte d'Azur</h2>
 
             {/* mobile-only image placed after the title */}
             <div className="why-image-mobile" aria-hidden>
-              <img src="/olive.jpg" alt="Arbre d'olive sur la Côte d'Azur" />
+              <img src="/olive.jpg" alt="Conciergerie luxe Côte d'Azur" loading="lazy" />
             </div>
 
             <motion.div
@@ -68,9 +68,9 @@ const WhyChooseUs = () => {
                     <path d="M12 2L4 5v6c0 5 4 9 8 11 4-2 8-6 8-11V5l-8-3z" fill="currentColor" />
                   </svg>
                 </span>
-                <h3 className="benefit-title">Sérénité totale</h3>
+                <h3 className="benefit-title">Sérénité Totale pour Votre Gestion de Biens</h3>
                 <p className="benefit-description">
-                  Nous gérons chaque aspect de vos emplacements, sans compromis.
+                  Nous gérons chaque aspect de vos locations saisonnières sur la Côte d'Azur, sans compromis.
                 </p>
               </motion.div>
 
@@ -81,9 +81,9 @@ const WhyChooseUs = () => {
                     <path d="M3 17h3v-7H3v7zm6 0h3V7H9v10zm6 0h3v-4h-3v4z" fill="currentColor" />
                   </svg>
                 </span>
-                <h3 className="benefit-title">Performance locative</h3>
+                <h3 className="benefit-title">Performance Locative et Revenus Optimisés</h3>
                 <p className="benefit-description">
-                  Stratégie tarifaire et taux d'occupations optimisés.
+                  Optimisation tarifaire et taux d'occupation maximisés pour vos revenus locatifs.
                 </p>
               </motion.div>
 
@@ -94,9 +94,9 @@ const WhyChooseUs = () => {
                     <path d="M12 17.3L5.6 20l1-6.1L2 9.6l6.2-.9L12 3l3.8 5.7 6.2.9-4.6 4.3L18.4 20 12 17.3z" fill="currentColor" />
                   </svg>
                 </span>
-                <h3 className="benefit-title">Service premium</h3>
+                <h3 className="benefit-title">Service Premium et Conciergerie Haut de Gamme</h3>
                 <p className="benefit-description">
-                  Chaque détail compte, pour vous comme pour vos hôtes.
+                  Chaque détail compte dans la gestion de votre propriété de luxe, pour vous comme pour vos hôtes.
                 </p>
               </motion.div>
 

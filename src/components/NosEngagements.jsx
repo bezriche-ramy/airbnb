@@ -16,9 +16,9 @@ const NosEngagements = () => {
         <div className="nos-engagements-content">
           <div className="engagements-badge">NOS ENGAGEMENTS</div>
 
-          <h2 className="engagements-title">Rubrique « Nos engagements »</h2>
+          <h2 className="engagements-title">Nos Engagements - Conciergerie Responsable Côte d'Azur</h2>
 
-          <p className="engagements-desc">Nous croyons en une conciergerie plus humaine, responsable et élégante.</p>
+          <p className="engagements-desc">Nous croyons en une conciergerie plus humaine, responsable et élégante pour la gestion de vos propriétés de luxe.</p>
 
           <div className="engagements-checklist">
             <div className="checklist-item">
@@ -28,7 +28,7 @@ const NosEngagements = () => {
                   <path d="M6 10l3 3 5-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="checklist-text">Collaboration avec des prestataires locaux</span>
+              <span className="checklist-text">Collaboration avec des prestataires locaux de la Côte d'Azur</span>
             </div>
 
             <div className="checklist-item">
@@ -38,7 +38,7 @@ const NosEngagements = () => {
                   <path d="M6 10l3 3 5-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="checklist-text">Entretien haut de gamme</span>
+              <span className="checklist-text">Entretien professionnel haut de gamme et ménage conciergerie</span>
             </div>
 
             <div className="checklist-item">
@@ -48,7 +48,7 @@ const NosEngagements = () => {
                   <path d="M6 10l3 3 5-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="checklist-text">Transparence et communication claire</span>
+              <span className="checklist-text">Transparence et communication claire sur votre gestion locative</span>
             </div>
 
             <div className="checklist-item">
@@ -58,13 +58,13 @@ const NosEngagements = () => {
                   <path d="M6 10l3 3 5-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="checklist-text">Engagement pour la durabilité</span>
+              <span className="checklist-text">Engagement pour la durabilité de votre bien immobilier</span>
             </div>
           </div>
         </div>
 
         <div className="nos-engagements-image-wrapper">
-          <img src="/nos enga.jpg" alt="B&C Conciergerie Côte d'Azur" className="nos-engagements-image" />
+          <img src="/nos enga.jpg" alt="Conciergerie haut de gamme Nice Monaco - Services premium gestion locative" className="nos-engagements-image" loading="lazy" />
         </div>
       </div>
     </section>
