@@ -14,7 +14,8 @@ const IconicCollectionCarousel = () => {
 
   // Framer Motion variants
   const featuredVariant = {
-    hidden: { scale: 0.92, opacity: 0 },
+    // keep scale animation but start fully visible to avoid pre-animation flash
+    hidden: { scale: 0.98, opacity: 1 },
     visible: {
       scale: 1,
       opacity: 1,
@@ -27,8 +28,9 @@ const IconicCollectionCarousel = () => {
     visible: { transition: { staggerChildren: 0.18 } }
   };
 
+  // Slide-in animation only — keep opacity at 1 so cards are visible before animation starts
   const cardVariant = {
-    hidden: { x: 80, opacity: 0 },
+    hidden: { x: 80, opacity: 1 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.8, ease: [0.2, 0.8, 0.2, 1] } }
   };
 

@@ -47,14 +47,16 @@
   grid-template-columns: 636px 636px;
   gap: 28px;
   justify-content: center;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Start visible to avoid content flash before JS mounts. Child cards are still animated via Framer Motion variants. */
+  opacity: 1;
+  transform: none;
 }
 
+/* Keep the is-visible class for compatibility but don't toggle visibility via CSS to avoid flicker.
+   Visual entrance is handled by Framer Motion variants on child elements. */
 .iconic-collection-container.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .featured-card-large {
