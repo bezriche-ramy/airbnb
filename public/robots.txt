@@ -9,7 +9,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://www.bc-conciergerie.com/sitemap.xml
+Sitemap: https://conciergerie-nice.vercel.app/sitemap.xml
 
 # Crawl-delay for polite crawlers
 Crawl-delay: 1
