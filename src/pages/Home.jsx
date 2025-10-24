@@ -5,6 +5,7 @@ import WelcomeSection from '../components/WelcomeSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import NosEngagements from '../components/NosEngagements';
 import IconicCollectionCarousel from '../components/IconicCollectionCarousel';
+import ServicesSection from '../components/ServicesSection';
 import './Home.css';
 
 /**
@@ -37,9 +38,13 @@ const Home = () => {
 
   {/* Nos Engagements Section */}
   <NosEngagements />
-
   {/* Iconic Collection Carousel - Featured Destinations */}
   <IconicCollectionCarousel />
+
+  {/* Services Section - Complete Management Services */}
+  <ServicesSection />
+
+  
       </main>
     </div>
   );
