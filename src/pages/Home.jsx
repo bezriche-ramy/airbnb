@@ -28,13 +28,13 @@ const Home = () => {
   <WelcomeSection />
 
   {/* subtle color transition between sections */}
-  <div className="section-transition" aria-hidden="true" />
+  
 
   {/* Why Choose Us Section - Key Benefits */}
   <WhyChooseUs />
 
   {/* subtle color transition between sections */}
-  <div className="section-transition-olive" aria-hidden="true" />
+  
 
   {/* Nos Engagements Section */}
   <NosEngagements />
