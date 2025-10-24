@@ -30,7 +30,11 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="hero-content">
         <h1 className="hero-title">
-          Votre bien. Notre expertise. Votre tranquillité.
+          Votre bien.
+          <br />
+          Notre expertise.
+          <br />
+          Votre tranquillité.
         </h1>
         <p className="hero-subtitle">
           B&C pour Bienveillance & Confiance

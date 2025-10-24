@@ -88,18 +88,18 @@
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
   color: var(--offwhite-50); /* #FAF9F6 */
   animation: titleReveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+  /* Respect explicit <br> line breaks and avoid unexpected wrapping during animation */
+  white-space: pre-line;
 }
 
 @keyframes titleReveal {
   from {
     opacity: 0;
     transform: translateY(30px);
-    letter-spacing: -2px;
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    letter-spacing: 0.5px;
   }
 }
 
