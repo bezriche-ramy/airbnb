@@ -15,9 +15,11 @@ const NosEngagements = () => {
       <div ref={ref} className={`nos-engagements-container ${visible ? 'is-visible' : ''}`}>
         <div className="nos-engagements-content">
           <div className="engagements-badge">NOS ENGAGEMENTS</div>
-          
-          <h2 className="engagements-title">Nous croyons en une conciergerie plus humaine, responsable et élégante.</h2>
-          
+
+          <h2 className="engagements-title">Rubrique « Nos engagements »</h2>
+
+          <p className="engagements-desc">Nous croyons en une conciergerie plus humaine, responsable et élégante.</p>
+
           <div className="engagements-checklist">
             <div className="checklist-item">
               <span className="check-icon" aria-hidden="true">
