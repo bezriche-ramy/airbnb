@@ -37,7 +37,7 @@ const HeroSection = () => {
           Votre tranquillité.
         </h1>
         <p className="hero-subtitle">
-          B&C pour Bienveillance & Confiance
+         B&C conciergerie pour bienveillance et confiance
         </p>
         <button className="estimation-button">
           Demander une estimation gratuite

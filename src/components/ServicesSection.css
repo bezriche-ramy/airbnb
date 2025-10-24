@@ -110,13 +110,13 @@
    Figma dimensions: 349.98px × 234.83px
    ============================================ */
 
-.service-card-image-wrapper {
-  width: 100%;
-  height: 235px;
-  overflow: hidden;
-  position: relative;
-  background: #e5e5e5;
-}
+  .service-card-image-wrapper {
+    width: 100%;
+    height: 235px;
+    overflow: hidden;
+    position: relative;
+    background: #e5e5e5;
+  }
 
 .service-card-image {
   width: 100%;
@@ -262,9 +262,24 @@
   }
 
   .service-card {
-    max-width: 500px;
+    width: 70%;
+    max-width: 420px;
     margin: 0 auto;
-    min-height: auto;
+  }
+
+  .service-card-image-wrapper {
+    width: 100%;
+    height: 220px !important;
+    overflow: hidden;
+    position: relative;
+    background: #e5e5e5;
+  }
+
+  .service-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .service-card-content {
@@ -290,7 +305,7 @@
   }
 
   .service-card-image-wrapper {
-    height: 200px;
+    height: 180px !important;
   }
 
   .service-card-content {

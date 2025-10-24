@@ -71,6 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .photo-grid {
@@ -80,19 +81,20 @@
   gap: 20px;
   width: 100%;
   max-width: 650px;
-  
-  
   aspect-ratio: 1;
+  overflow: visible;
 }
 
 .grid-photo {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  display: block;
 }
 
 .grid-photo:hover {
@@ -228,13 +230,16 @@
 /* Tablets */
 @media (max-width: 768px) {
   .welcome-section {
-    padding: 60px 0;
+    padding: 60px 20px;
     min-height: auto;
+    overflow-x: hidden;
   }
 
   .welcome-container {
     grid-template-columns: 1fr;
     gap: 50px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .welcome-text {
@@ -251,41 +256,118 @@
     font-size: clamp(1rem, 3vw, 1.15rem);
   }
 
+  .welcome-photos {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
   .photo-grid {
-    max-width: 500px;
+    max-width: 100%;
+    width: 100%;
     gap: 16px;
+  }
+
+  .grid-photo {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
   }
 }
 
 /* Mobile Devices */
 @media (max-width: 480px) {
   .welcome-section {
-    padding: 40px 0;
+    padding: 40px 16px;
+    overflow-x: hidden;
   }
 
   .welcome-container {
-    width: 95%;
+    width: 100%;
+    max-width: 100%;
     gap: 40px;
   }
 
   .welcome-text {
     gap: 20px;
+    padding: 0 8px;
   }
 
   .welcome-title {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
   }
 
+  .welcome-photos {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    overflow: visible;
+  }
+
   .photo-grid {
     max-width: 100%;
+    width: 100%;
     gap: 12px;
+    padding: 0;
+    aspect-ratio: auto;
+    grid-template-rows: auto auto;
   }
 
   .grid-photo {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    max-width: 100%;
     border-radius: 8px;
+    object-fit: cover;
   }
 
   .grid-photo:hover {
     transform: translateY(-4px) scale(1.01);
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  .welcome-section {
+    padding: 30px 12px;
+  }
+
+  .welcome-container {
+    gap: 30px;
+  }
+
+  .welcome-text {
+    gap: 16px;
+    padding: 0 4px;
+  }
+
+  .photo-grid {
+    gap: 10px;
+  }
+
+  .grid-photo {
+    border-radius: 6px;
+  }
+}
+
+/* Very small devices (iPhone SE) */
+@media (max-width: 320px) {
+  .welcome-section {
+    padding: 24px 10px;
+  }
+
+  .welcome-title {
+    font-size: 1.6rem;
+  }
+
+  .welcome-description {
+    font-size: 0.95rem;
+  }
+
+  .photo-grid {
+    gap: 8px;
   }
 }

@@ -6,6 +6,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import NosEngagements from '../components/NosEngagements';
 import IconicCollectionCarousel from '../components/IconicCollectionCarousel';
 import ServicesSection from '../components/ServicesSection';
+import NosLogements from '../components/NosLogements';
 import './Home.css';
 
 /**
@@ -43,6 +44,9 @@ const Home = () => {
 
   {/* Services Section - Complete Management Services */}
   <ServicesSection />
+
+  {/* Nos Logements Section - Property Showcase */}
+  <NosLogements />
 
   
       </main>

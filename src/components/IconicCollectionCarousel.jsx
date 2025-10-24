@@ -50,68 +50,9 @@ const IconicCollectionCarousel = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.16 }}
       >
-        {/* Left Side - Large Featured Card */}
-        <div className="featured-card-large">
-          <motion.div
-            className="featured-card-image-wrapper"
-            variants={featuredVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <img 
-              src="/cannes.jpg" 
-              alt="Cannes - Destination de luxe sur la Côte d'Azur" 
-              className="featured-card-image"
-            />
-            <div className="featured-card-overlay">
-              <span className="featured-badge">CHOIX POPULAIRE</span>
-              <h3 className="featured-title">Cannes</h3>
-              <p className="featured-location">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 2C5.79086 2 4 3.79086 4 6C4 8.5 8 14 8 14C8 14 12 8.5 12 6C12 3.79086 10.2091 2 8 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="8" cy="6" r="1.5" stroke="currentColor" strokeWidth="1.5"/>
-                </svg>
-                Côte d'Azur, France
-              </p>
-              <p className="featured-description">
-                Prestige, glamour, et culture sur le littoral méditerranéen. Profitez du luxe français à son apogée.
-              </p>
-              <button className="explore-btn">
-                Découvrir
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Right Side - Stack of 3 Cards */}
-  <motion.div className="destination-cards-stack" variants={cardsContainer}>
+        <motion.div className="destination-cards-stack" variants={cardsContainer}>
           
-          {/* Card 1 - Monaco */}
-          <motion.div className="destination-card" variants={cardVariant}>
-            <div className="card-thumbnail">
-              <img src="/monaco.jpg" alt="Monaco" className="card-thumbnail-image" />
-              <span className="card-badge badge-red">MEILLEURE OFFRE</span>
-            </div>
-            <div className="card-content">
-              <h4 className="card-title">Monaco</h4>
-              <p className="card-location">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 1.75C5.067 1.75 3.5 3.317 3.5 5.25C3.5 7.4375 7 12.25 7 12.25C7 12.25 10.5 7.4375 10.5 5.25C10.5 3.317 8.933 1.75 7 1.75Z" stroke="currentColor" strokeWidth="1.2"/>
-                  <circle cx="7" cy="5.25" r="1.25" stroke="currentColor" strokeWidth="1.2"/>
-                </svg>
-                Monaco
-              </p>
-              <p className="card-description">
-                Glamour absolu, yachts prestigieux et casino légendaire sur la Méditerranée scintillante.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Card 2 - Côte d'Azur */}
+          {/* Card 1 - Côte d'Azur */}
           <motion.div className="destination-card" variants={cardVariant}>
             <div className="card-thumbnail">
               <img src="/cote azur.jpg" alt="Côte d'Azur" className="card-thumbnail-image" />
@@ -131,11 +72,30 @@ const IconicCollectionCarousel = () => {
             </div>
           </motion.div>
 
+          {/* Card 2 - Monaco */}
+          <motion.div className="destination-card" variants={cardVariant}>
+            <div className="card-thumbnail">
+              <img src="/monaco.jpg" alt="Monaco" className="card-thumbnail-image" />
+            </div>
+            <div className="card-content">
+              <h4 className="card-title">Monaco</h4>
+              <p className="card-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1.75C5.067 1.75 3.5 3.317 3.5 5.25C3.5 7.4375 7 12.25 7 12.25C7 12.25 10.5 7.4375 10.5 5.25C10.5 3.317 8.933 1.75 7 1.75Z" stroke="currentColor" strokeWidth="1.2"/>
+                  <circle cx="7" cy="5.25" r="1.25" stroke="currentColor" strokeWidth="1.2"/>
+                </svg>
+                Monaco
+              </p>
+              <p className="card-description">
+                Glamour absolu, yachts prestigieux et casino légendaire sur la Méditerranée scintillante.
+              </p>
+            </div>
+          </motion.div>
+
           {/* Card 3 - Villefranche-sur-Mer */}
           <motion.div className="destination-card" variants={cardVariant}>
             <div className="card-thumbnail">
               <img src="/ville_franche.jpg" alt="Villefranche-sur-Mer" className="card-thumbnail-image" />
-              <span className="card-badge badge-yellow">PLACES LIMITÉES</span>
             </div>
             <div className="card-content">
               <h4 className="card-title">Villefranche-sur-Mer</h4>
@@ -148,6 +108,26 @@ const IconicCollectionCarousel = () => {
               </p>
               <p className="card-description">
                 Baie pittoresque, ruelles colorées et authenticité provençale au cœur de la Riviera.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Card 4 - Cannes */}
+          <motion.div className="destination-card" variants={cardVariant}>
+            <div className="card-thumbnail">
+              <img src="/cannes.jpg" alt="Cannes" className="card-thumbnail-image" />
+            </div>
+            <div className="card-content">
+              <h4 className="card-title">Cannes</h4>
+              <p className="card-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1.75C5.067 1.75 3.5 3.317 3.5 5.25C3.5 7.4375 7 12.25 7 12.25C7 12.25 10.5 7.4375 10.5 5.25C10.5 3.317 8.933 1.75 7 1.75Z" stroke="currentColor" strokeWidth="1.2"/>
+                  <circle cx="7" cy="5.25" r="1.25" stroke="currentColor" strokeWidth="1.2"/>
+                </svg>
+                Côte d'Azur, France
+              </p>
+              <p className="card-description">
+                Prestige, glamour, et culture sur le littoral méditerranéen. Profitez du luxe français à son apogée.
               </p>
             </div>
           </motion.div>
